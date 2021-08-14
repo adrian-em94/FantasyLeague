@@ -1,0 +1,28 @@
+.outercontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh
+}
+
+.innercontainer {
+    width: 50%;
+    background-color: royalblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bootstrap-iso {
+    width: 70%;
+    padding-bottom: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+h1 {
+    padding-bottom: 2rem;
+}
+

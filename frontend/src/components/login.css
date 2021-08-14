@@ -1,0 +1,62 @@
+.outer_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh
+}
+
+.inner_container {
+    width: 90%;
+    margin-inline: auto;
+    display: flex;
+    margin-top: 3em;
+}
+
+.left_container {
+    width: 30%;
+    background-color: aqua;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.right_container {
+    width: 70%;
+    background-color: greenyellow;
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+
+/* Login Form css*/
+
+.bootstrap-iso {
+    width: 50%;
+    padding-top: 3em;
+    padding-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.submit-btn {
+    margin-top: 0.5em;
+    color: #fff;
+    padding: 1em;
+    background-color: purple;
+    width: 100%;
+    border: #fff 2px solid;
+    border-radius: 1em;
+}
+
+.submit-btn:hover {
+    color: #000;
+    background-color: #fff;
+    border: purple 2px solid;
+    transition: all 0.3s ease-out;
+}
+
+.link {
+    margin-top: 1rem;
+}
