@@ -5,6 +5,7 @@ const initialState = {
     name: "",
     email: "",
     password: "",
+    c_password: "",
     nameError: "", 
     emailError: "",
     passwordError: "",
@@ -27,6 +28,21 @@ const CreateAccount = () => {
     const handleSubmit = (event) => {
         event.preventDefault()
         console.log(newUser.name, newUser.email, newUser.password)
+
+        try{
+            //configure the headers
+            const config = {
+                headers: {
+                    "Content-type": "application/json",
+                }
+            }
+
+            //api call passing in name, email, password, 
+            //and confirmed password
+
+        }catch(Error){
+
+        }
     }
 
     return(
@@ -53,6 +69,10 @@ const CreateAccount = () => {
                     <div className="form-floating mb-3">
                         <input type="password" className="form-control" name="password"  value={newUser.password} onChange={handleOnChange} placeholder="Password"/>
                         <label htmlFor="floatingInput">Password</label>
+                    </div>
+                    <div className="form-floating mb-3">
+                        <input type="password" className="form-control" name="c_password"  value={newUser.password} onChange={handleOnChange} placeholder="Password"/>
+                        <label htmlFor="floatingInput">Confirm Password</label>
                     </div>
                     <div className='ErrorMessages'>
                         {newUser.passwordError}
