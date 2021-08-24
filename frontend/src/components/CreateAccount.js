@@ -28,8 +28,14 @@ const CreateAccount = () => {
     const handleSubmit = (event) => {
         event.preventDefault()
         console.log(newUser.name, newUser.email, newUser.password)
+        if(newUser.password !== newUser.c_password){
+                        setnewUser({...newUser, passwordError: "Passwords do not match!"})
+        }else {
 
+        }
         try{
+            
+
             //configure the headers
             const config = {
                 headers: {
@@ -49,7 +55,6 @@ const CreateAccount = () => {
         <div className="outercontainer">
             <div className="innercontainer">
                 <div className='bootstrap-iso'>
-                
                     <h1>Create an Account</h1>
                 <form id='myform'>
                     <div className="form-floating mb-3">

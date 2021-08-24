@@ -43,7 +43,6 @@ const LoginForm = () => {
     //submits
     const handleSubmit = async (event) => {
         event.preventDefault()
-        //console.log(newUser.email, newUser.password)
 
         try{
             //configuring headers
