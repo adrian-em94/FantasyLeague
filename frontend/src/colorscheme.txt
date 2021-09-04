@@ -1,0 +1,5 @@
+primary-dark: rgb(51,51,51)
+primary-color-dark: rgb(153,1,0)
+primary-color: rgb(185,5,4)
+primary-light: rgb(246,246,246)
+primary-less-light: rgb(232,232,232)
