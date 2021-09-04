@@ -5,13 +5,14 @@ const Squad = require('../data/models/squadModel');
 const saveSquadPlayers = asyncHandler(async (req, res) => {
 
     //request info
-    const { _id, name, logo } = req.body;
+    const { id, name, logo, /*players*/ } = req.body;
 
     //create entry in database
     const squad = await Squad.create({
         _id,
         name,
         logo,
+        //players,
     });
 
     //check to see if it worked
