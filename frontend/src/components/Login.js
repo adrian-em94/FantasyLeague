@@ -7,7 +7,10 @@ const Login = () => {
         <div className="outer_container">
             <div className="inner_container">
                 <div className="left_container">
-                    <h1>Welcome to Aztec Fantasy League</h1>
+                    <h1>Welcome 
+                        <br />to
+                        <br />Aztec Fantasy League
+                    </h1>
                 </div>
                 <div className="right_container">
                     <LoginForm history/>

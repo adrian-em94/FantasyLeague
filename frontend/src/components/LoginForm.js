@@ -17,12 +17,6 @@ const initialState = {
 const LoginForm = () => {
     const [newUser, setnewUser] = useState(initialState)
     const history = useHistory()
-
-    //make api call
-    // const fetch = async() => {
-    //     const { data } = await axios.get('/api/notes');
-    //     console.log(data)
-    // } 
     
     useEffect(() => {
         const userInfo = localStorage.getItem("userInfo");
