@@ -25,7 +25,7 @@ const CreateAccount = () => {
         if(userInfo) {
             history.push("/TeamProfile")
         }
-    }, [newUser, history ]);
+    }, [ newUser, history ]);
 
     //gets value from input and sets state
     const handleOnChange = (event) => {

@@ -22,7 +22,7 @@ const LoginForm = () => {
         const userInfo = localStorage.getItem("userInfo");
 
         if(userInfo) {
-            history.push("/Home");
+            history.push("/TeamProfile");
         }
 
     }, [ newUser, history ]);

@@ -4,7 +4,7 @@ const notes = require("../data/notes");
 const connectDB = require("../config/db");
 const userRoutes = require('../routes/userRoutes');
 const { notFound, errorHandler } = require("../middlewares/errorMiddleware");
-const apiRoutes = require('../routes/apiRoutes');
+//const apiRoutes = require('../routes/apiRoutes');
 
 const app = express();
 dotenv.config();
@@ -25,7 +25,7 @@ app.get('/', (req, res) => {
 app.use('/api/users', userRoutes)
 
 //created route for database
-app.use('/api/dbcalls', apiRoutes)
+//app.use('/api/dbcalls', apiRoutes)
 
 app.use(notFound)
 app.use(errorHandler)
