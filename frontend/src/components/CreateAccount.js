@@ -1,3 +1,5 @@
+import axios from 'axios'
+import { useHistory } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import './CreateAccount.css'
 
@@ -15,8 +17,15 @@ const initialState = {
 
 const CreateAccount = () => {
     const [newUser, setnewUser] = useState(initialState)
+    const history = useHistory()
 
-    useEffect(() => {}, [newUser]);
+    useEffect(() => {
+        const userInfo = localStorage.getItem("userInfo");
+
+        if(userInfo) {
+            history.push("/TeamProfile")
+        }
+    }, [newUser, history ]);
 
     //gets value from input and sets state
     const handleOnChange = (event) => {
@@ -25,17 +34,14 @@ const CreateAccount = () => {
         setnewUser({...newUser, [name]: value});
     }
 
-    const handleSubmit = (event) => {
+    const handleSubmit = async (event) => {
         event.preventDefault()
-        console.log(newUser.name, newUser.email, newUser.password)
+        
         if(newUser.password !== newUser.c_password){
                         setnewUser({...newUser, passwordError: "Passwords do not match!"})
-        }else {
-
         }
-        try{
-            
 
+        try{
             //configure the headers
             const config = {
                 headers: {
@@ -43,11 +49,27 @@ const CreateAccount = () => {
                 }
             }
 
-            //api call passing in name, email, password, 
+            //api call passing in name, email, password,
             //and confirmed password
+            const { data } = await axios.post(
+                '/api/users/',
+                {
+                    name: newUser.name,
+                    email: newUser.email,
+                    password: newUser.password,
+                },
+                    config
+            );
 
-        }catch(Error){
+            localStorage.setItem("userInfo", JSON.stringify(data));
+            
+            console.log(data);
+            
 
+        }catch(error){
+            const stringerror = error.response.data.message
+            console.log(stringerror)
+            setnewUser({...newUser, "error": {stringerror}})
         }
     }
 
@@ -76,7 +98,7 @@ const CreateAccount = () => {
                         <label htmlFor="floatingInput">Password</label>
                     </div>
                     <div className="form-floating mb-3">
-                        <input type="password" className="form-control" name="c_password"  value={newUser.password} onChange={handleOnChange} placeholder="Password"/>
+                        <input type="password" className="form-control" name="c_password"  value={newUser.c_password} onChange={handleOnChange} placeholder="Password"/>
                         <label htmlFor="floatingInput">Confirm Password</label>
                     </div>
                     <div className='ErrorMessages'>
