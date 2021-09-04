@@ -1,0 +1,73 @@
+.outerContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.navbar {
+    width: 100%;
+    height: 10%;
+    background-color: blue;
+}
+
+.innerContainer {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.leftContainer {
+    background-color: blue;
+    width: 20%;
+    min-width: 200px;
+}
+
+.rightContainer {
+    width: 80%;
+}
+
+.futField {
+    background-color: red;
+    width: 100%;
+    height: 40%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.pitch {
+    border: yellow solid 1em;
+    height: 100%;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    position: absolute;
+}
+
+.pitch > img {
+    width: 100%;
+}
+
+.goalie {
+    background-color: red;
+    width: 10%;
+    height: 8%;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 1em;
+    left: 45%;
+}
+
+.futfieldpitch {
+    height: 100px;
+}
+
+.squadList {
+    background-color: yellow;
+    height: 60%;
+}
+
+.playerList {
+    background-color: purple;
+    height: 100%;
+}
