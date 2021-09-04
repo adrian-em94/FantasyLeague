@@ -25,7 +25,7 @@
 }
 
 .leftContainer {
-    background-color: ;
+    background-color: var(--primary-light);
     width: 20%;
     min-width: 200px;
 }
