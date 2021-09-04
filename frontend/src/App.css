@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+  
+}
+
+.font-custom {
+  font-family: 'RocknRoll One', sans-serif;
 }
 
 .App-logo {
