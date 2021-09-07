@@ -1,0 +1,261 @@
+.goalie {
+    background-color: red;
+    width: 8%;
+    height: 8%;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 1%;
+    left: 45%;
+    font-size: .5rem;
+    text-align: center;
+    color: var(--primary-light);
+}
+
+.leftBack_433 {
+    background-color: red;
+    width: 8%;
+    height: 8%;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 15%;
+    left: 29%;
+    font-size: .5rem;
+    text-align: center;
+    color: var(--primary-light);
+}
+
+.leftCenterBack_433 {
+    background-color: red;
+    width: 8%;
+    height: 8%;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 15%;
+    left: 40%;
+    font-size: .5rem;
+    text-align: center;
+    color: var(--primary-light);
+}
+
+.rightCenterBack_433 {
+    background-color: red;
+    width: 8%;
+    height: 8%;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 15%;
+    right: 40%;
+    font-size: .5rem;
+    text-align: center;
+    color: var(--primary-light);
+}
+
+.rightBack_433 {
+    background-color: red;
+    width: 8%;
+    height: 8%;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 15%;
+    right: 29%;
+    font-size: .5rem;
+    text-align: center;
+    color: var(--primary-light);
+}
+
+.leftMiddle_433 {
+    background-color: red;
+    width: 8%;
+    height: 8%;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 43%;
+    left: 30%;
+    font-size: .5rem;
+    text-align: center;
+    color: var(--primary-light);
+}
+
+.centerMiddle_433 {
+    background-color: red;
+    width: 8%;
+    height: 8%;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 43%;
+    left: 46%;
+    font-size: .5rem;
+    text-align: center;
+    color: var(--primary-light);
+}
+
+.rightMiddle_433 {
+    background-color: red;
+    width: 8%;
+    height: 8%;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 43%;
+    right: 30%;
+    font-size: .5rem;
+    text-align: center;
+    color: var(--primary-light);
+}
+
+.leftForward_433 {
+    background-color: red;
+    width: 8%;
+    height: 8%;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 69%;
+    left: 30%;
+    font-size: .5rem;
+    text-align: center;
+    color: var(--primary-light);
+}
+
+.centerForward_433 {
+    background-color: red;
+    width: 8%;
+    height: 8%;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 73%;
+    left: 52%;
+    font-size: .5rem;
+    color: var(--primary-light);
+    margin-left: -20px;
+}
+
+.rightForward_433 {
+    background-color: red;
+    width: 8%;
+    height: 8%;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 69%;
+    right: 30%;
+    font-size: .5rem;
+    text-align: center;
+    color: var(--primary-light);
+}
+
+/* 442 Formation */
+.leftMiddle_442 {
+    background-color: red;
+    width: 8%;
+    height: 8%;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 43%;
+    left: 29%;
+    font-size: .5rem;
+    text-align: center;
+    color: var(--primary-light);
+}
+
+.centerLeftMiddle_442 {
+    background-color: red;
+    width: 8%;
+    height: 8%;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 43%;
+    left: 40%;
+    font-size: .5rem;
+    text-align: center;
+    color: var(--primary-light);
+}
+
+.centerRightMiddle_442 {
+    background-color: red;
+    width: 8%;
+    height: 8%;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 43%;
+    right: 40%;
+    font-size: .5rem;
+    text-align: center;
+    color: var(--primary-light);
+}
+
+.rightMiddle_442 {
+    background-color: red;
+    width: 8%;
+    height: 8%;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 43%;
+    right: 29%;
+    font-size: .5rem;
+    text-align: center;
+    color: var(--primary-light);
+}
+
+.leftForward_442 {
+    background-color: red;
+    width: 8%;
+    height: 8%;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 73%;
+    left: 40%;
+    font-size: .5rem;
+    text-align: center;
+    color: var(--primary-light);
+}
+
+.rightForward_442 {
+    background-color: red;
+    width: 8%;
+    height: 8%;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 73%;
+    right: 40%;
+    font-size: .5rem;
+    text-align: center;
+    color: var(--primary-light);
+}
+
+/* 343 Formation */
+.leftCenterBack_343 {
+    background-color: red;
+    width: 8%;
+    height: 8%;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 15%;
+    left: 35%;
+    font-size: .5rem;
+    text-align: center;
+    color: var(--primary-light);
+}
+
+.middleCenterBack_343 {
+    background-color: red;
+    width: 8%;
+    height: 8%;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 15%;
+    left: 46%;
+    font-size: .5rem;
+    text-align: center;
+    color: var(--primary-light);
+}
+
+.rightCenterBack_343 {
+    background-color: red;
+    width: 8%;
+    height: 8%;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 15%;
+    right: 35%;
+    font-size: .5rem;
+    text-align: center;
+    color: var(--primary-light);
+}
