@@ -1,0 +1,14 @@
+
+.specialTR:hover {
+    background-color: var(--primary-color);
+}
+
+.listContainer {
+    border: .25em solid var(--primary-color-dark);
+    border-radius: 1em;
+    height: 70%;
+}
+
+Table {
+    font-size: x-small;
+}

@@ -84,9 +84,15 @@
 }
 
 .squadList {
-    background-color: black;
+    background-color: greenyellow;
     height: 55%;
     margin-top: 1.5em;
+}
+
+.squadList > h3 {
+    text-align: center;
+    padding: .1em;
+    color: var(--primary-dark);
 }
 
 .playerList {

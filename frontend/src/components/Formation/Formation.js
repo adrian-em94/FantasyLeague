@@ -1,11 +1,11 @@
 import './Formation.css'
 
-const Formation = ({ chosenFormation } ) => {
+const Formation = (props) => {
     const a = '433';
     const b = '442';
     const c = '343';
 
-    switch(chosenFormation){
+    switch(props.chosenFormation.form){
         case a:
             return (
                 <div className="players">
@@ -55,7 +55,11 @@ const Formation = ({ chosenFormation } ) => {
                 </div>
             )
         default:
-            break;
+            return(
+                <div>
+                    <h1>Nothing to see here!!!!</h1>
+                </div>
+            )
     }
     
 }
