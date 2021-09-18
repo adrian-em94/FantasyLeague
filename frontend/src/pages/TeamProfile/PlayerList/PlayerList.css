@@ -1,0 +1,23 @@
+.playerTR {
+    color: white;
+}
+
+.playerTR:hover {
+    background-color: var(--primary-color);
+}
+
+.playerContainer {
+    border: .25em solid var(--primary-color-dark);
+    border-radius: 1em;
+    height: fit-content;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.playerTable {
+    font-size: 2rem;
+}
+
+.table.table-hover tbody tr:hover {
+    background-color: var(--primary-color);
+}

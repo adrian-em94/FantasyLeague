@@ -15,12 +15,6 @@ app.get('/', (req, res) => {
     res.send("API is running...")
 });
 
-//retrieve dummy notes
-//  app.get('/api/notes', (req, res) => {
-//    res.json(notes)
-//  })
-
-
 //created route for user login and register
 app.use('/api/users', userRoutes)
 

@@ -3,6 +3,7 @@ import Pitch from "../../images/pitch.png"
 import Formation from '../../components/Formation/Formation'
 import { useState, } from 'react'
 import SquadList from './SquadList/SquadList'
+import PlayerList from './PlayerList/PlayerList'
 
 //default formation
 const initialState = {
@@ -48,6 +49,7 @@ const TeamProfile = () => {
                     <div className="rightContainer">
                         <div className="playerList">
                             <h1>PLAYERLIST</h1>
+                            <PlayerList />
                         </div>
                     </div>
                 </div>
